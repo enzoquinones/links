@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links | Nicano</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
+  <style>
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+    
+    body { 
+      font-family: 'Poppins', sans-serif; 
+      background: #000; 
+      color: #fff; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 60px 20px;
+    }
+
+    /* --- En-tête (Photo principale et nom) --- */
+    .profile-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .profile-header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid #ff2e2e;
+    }
+    
+    .profile-header h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    
+    .profile-header p {
+      opacity: 0.6;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+
+    /* --- NOUVEAU : Lien central (Portfolio) --- */
+    .main-link-wrapper {
+      width: 100%;
+      max-width: 430px; /* Taille idéale pour ce bouton centré */
+      margin-bottom: 50px; /* Espace avant de passer aux colonnes en dessous */
+    }
+
+    /* Optionnel : Met le bouton Portfolio un peu plus en valeur */
+    .portfolio-btn {
+      border: 1px solid rgba(255, 46, 46, 0.4) !important;
+      background: rgba(40, 10, 10, 0.8) !important;
+    }
+
+    /* --- Grille pour les deux colonnes --- */
+    .split-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .column h2 {
+      font-size: 1.1rem;
+      text-align: center;
+      color: #ff2e2e;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    /* --- Style des boutons --- */
+    /* Modifie ce bloc dans ton <style> pour un effet "Glassmorphism" */
+    .link-btn {
+      display: flex;
+      align-items: center;
+      background: rgba(15, 15, 15, 0.6); /* Plus transparent */
+      backdrop-filter: blur(10px); /* Flou de l'arrière-plan derrière le bouton */
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 50px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 0, 0, 0.5) !important;
+      background: rgba(255, 0, 0, 0.1) !important; /* Teinte rouge au survol */
+      box-shadow: 0 8px 25px rgba(255, 0, 0, 0.2);
+    }
+
+    .link-btn:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 0, 0, 0.5) !important;
+      background: rgba(30, 30, 30, 1) !important;
+      box-shadow: 0 8px 20px rgba(255, 0, 0, 0.15);
+    }
+
+    .pdp-icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .link-text {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .link-text h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    
+    .link-text p {
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+
+    .profile-header h1:hover {
+      animation: glitch 1.5s infinite;
+    }
+    
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 #ff0000; }
+      50% { text-shadow: -2px 0 #0000ff; }
+      100% { text-shadow: 2px 0 #ff0000; }
+    }
+
+    /* --- LA MAGIE DU MOBILE --- */
+    @media (max-width: 768px) {
+      .split-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div style="position:fixed; top:0; left:0; width:100%; height:100%; z-index:-2; overflow:hidden; background-color: #000;">
+  <video 
+    src="bg.mp4" 
+    autoplay 
+    loop 
+    muted 
+    playsinline
+    style="width:100%; height:100%; object-fit:cover; opacity:.08;">
+  </video>
+</div>
+  <div class="profile-header">
+    <h1>Nicano</h1>
+    <p>Links</p>
+  </div>
+
+  <div class="main-link-wrapper">
+    <a href="https://enzoquinones.fr" class="link-btn portfolio-btn">
+      <img src="pfpvfx.png" alt="Portfolio" class="pdp-icon">
+      <div class="link-text">
+        <h3>PORTFOLIO (FRENCH)</h3>
+      </div>
+    </a>
+  </div>
+
+  <div class="split-layout">
+
+    <div class="column">
+      <h2>TIKTOK</h2>
+	  
+      <a href="https://www.tiktok.com/@nicano.yvl" target="_blank" class="link-btn">
+        <img src="perso.jpg" alt="TikTok Perso" class="pdp-icon">
+        <div class="link-text">
+          <h3>MAIN</h3>
+          <p>@nicano.yvl</p>
+        </div>
+      </a>
+	  
+	  <a href="https://www.tiktok.com/@63.nicano" target="_blank" class="link-btn">
+        <img src="63pfp.jpg" alt="Edits" class="pdp-icon">
+        <div class="link-text">
+          <h3>FRENCH RAP EDITS</h3>
+          <p>@63.nicano</p>
+        </div>
+      </a>
+	  
+	  <a href="https://www.tiktok.com/@nicano.aep" target="_blank" class="link-btn">
+        <img src="pfpaep.jpg" alt="Edits" class="pdp-icon">
+        <div class="link-text">
+          <h3>FANDOM EDITS</h3>
+          <p>@nicano.aep</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <h2>INSTAGRAM</h2>
+
+      <a href="https://www.instagram.com/enzo.qns/" target="_blank" class="link-btn">
+        <img src="perso.jpg" alt="VFX" class="pdp-icon">
+        <div class="link-text">
+          <h3>MAIN</h3>
+          <p>@enzo.qns</p>
+        </div>
+      </a>
+	  <a href="https://www.instagram.com/nicano.vfx/" target="_blank" class="link-btn">
+        <img src="pfpvfx.png" alt="Edits" class="pdp-icon">
+        <div class="link-text">
+          <h3>VFX</h3>
+          <p>@nicano.vfx</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
